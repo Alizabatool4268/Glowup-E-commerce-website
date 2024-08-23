@@ -1,0 +1,51 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+/* .navbar{
+    height: 50px;
+    width: 100%;
+    background-color: #f4faec;
+    display: flex;
+    flex-direction: row;  
+} */
+#logo{
+    height: 50px;
+    width:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: #aaa245; 
+    font-weight: bolder;
+
+}
+p{
+    font-family:Georgia, Times, 'Times New Roman', serif;
+}
+.icons a {
+        color: #aaa245;
+}
+.icons{
+    height: 50px;
+    width: 35vw;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    left:45rem
+}
+#background{
+    height: 200vh;
+    width:100%;
+    background-image:url("glowup-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
