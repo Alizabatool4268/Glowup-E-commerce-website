@@ -6,39 +6,175 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Glowup</title>
-
 </head>
 <body>
-    <!-- <header>
+     <header>
         <div class="navbar">
             <div id="logo">
-              <p> Glow Up</p>
+            </div> 
+             <!-- search bar -->
+             <div id="searchBar">
+                <input type="search" placeholder="search"id="search">
+                <div id="search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div>
              <div class="icons">
-                <div id="home"><a href="#"><i class="fa-solid fa-house"></i></a></div> 
-                <div id="you"><a href="#"><i class="fa-solid fa-user"></i> </a></div> 
-                <div id="contactUs"><a href="#"><i class="fa-solid fa-phone"></i> </a></div> 
-                <div id="cart"><a href="#"><i class="fa-solid fa-cart-flatbed-suitcase"></i> </a></div> 
+                <div id="home"><a href="index.html"><i class="fa-solid fa-house"></i></a></div> 
+                <div id="you"><a href="me.html"><i class="fa-solid fa-user"></i> </a></div> 
+                <div id="contactUs"><a href="contact.html"><i class="fa-solid fa-phone"></i> </a></div> 
+                <div id="cart"><a href="cart.html"><i class="fa-solid fa-cart-flatbed-suitcase"></i> </a></div>
+                <div onclick=showSidebar() id="menu"><a><i class="fa-solid fa-bars"></i></a></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="icons-sidebar">
+                <div onclick="closeSidebar()"><a><i class="fa-regular fa-circle-xmark"></i></a></div>
+                <div id="home-side"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div> 
+                <div id="you-side"><a href="me.html"><i class="fa-solid fa-user"></i>Me </a></div> 
+                <div id="contactUs-side"><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></div> 
+                <div id="cart-side"><a href="cart.html"><i class="fa-solid fa-cart-flatbed-suitcase"></i>Cart </a></div> 
             </div>
         </div>
     </header>
+    <script>
+        function showSidebar(){
+            const sidebar=document.getElementsByClassName('sidebar')[0]
+            sidebar.style.display="flex";
+        }
+        function closeSidebar(){
+            const close = document.getElementsByClassName("sidebar")[0]
+            close.style.display="none"
+        }
+    </script>
     <main>
-        <div id="background"></div>
-    </main> -->
-    <div id="background">
-        <div class="navbar">
-            <div id="logo">
-              <p> Glow Up</p>
-            </div>
-             <div class="icons">
-                <div id="home"><a href="#"><i class="fa-solid fa-house"></i></a></div> 
-                <div id="you"><a href="#"><i class="fa-solid fa-user"></i> </a></div> 
-                <div id="contactUs"><a href="#"><i class="fa-solid fa-phone"></i> </a></div> 
-                <div id="cart"><a href="#"><i class="fa-solid fa-cart-flatbed-suitcase"></i> </a></div> 
-            </div>
+        <hr>
+        <div id="background">
+            <div class="sub-background">
+              <div id="model"></div>
+              <span id="welcome-para">
+                   <p>Are you ready to become the<br>Center of attraction</p>
+                   <p class="static-para"> you are at the right place at the write time<br>
+                       Spend less smile more</p>
+                   <button>Shop Now</button>
+               </span>
+             </div>
         </div>
-    </div>
+        <!-- items-batch-one -->
+        <div class="items-batch-one">
+             <div id="boxOfProduct1">
+                 <div id="product1">
+                 </div>
+                 <p><big>e.l.f.</big><br>
+                    Squeeze Me Lip Balm, Moisturizing Lip Balm For A Sheer Tint Of Color<br> <button>Add to cart</button>
+                </p>
+             </div>
+             <div id="boxOfProduct2">
+                 <div id="product2">
+                 </div>
+                 <p><big> CeraVe</big><br>
+                    Retinol Serum for Post-Acne Marks and Skin Texture | Pore Refining, Resurfacing<br> <button>Add to cart</button>
+                </p>
+             </div>
+             <div id="boxOfProduct3">
+                 <div id="product3">
+                </div>
+                <p><big>CeraVe</big>
+                    <br>
+                    Skin Renewing Night Cream | Niacinamide, Peptide Complex, and Hyaluronic acid.
+                    <br> <button>Add to cart</button>
+                </p>
+            </div> 
+        <!-- items-batch-one end -->
+           <!-- items-batch-two -->
+        </div>
+        <div class="items-batch-two">
+             <div id="boxOfProduct4">
+                 <div id="product4">
+                 </div>
+                 <p><big>Honest Beauty</big>
+                    <br>
+                    Honestly Bright Eyes Tinted Eye Cream | Brightens + Diffuses Dark Circles
+                    <br> <button>Add to cart</button>
+                </p>
+             </div>
+             <div id="boxOfProduct5">
+                 <div id="product5">
+                 </div>
+                 <p><big>Mario Badescu</big>
+                    <br>
+                    Facial Spray with Aloe, Herbs and Rose Water for All Skin Types, Face Mist that Hydrates, Rejuvenates & Clarifies
+                    <br> <button>Add to cart</button>
+                </p>
+             </div>
+             <div id="boxOfProduct6">
+                 <div id="product6">
+                </div>
+                <p><big>Revolution</big>
+                    <br>
+                    Miracle Cream, Hydrating & Moisturizing Face Cream, Helps Dullness with Hyaluronic Acid & Niacinamide
+                    <br> <button>Add to cart</button>
+                </p>
+         </div> 
+        <!-- items-batch-two end -->
+           <!-- items-batch-three -->
+        </div>
+        <div class="items-batch-three">
+             <div id="boxOfProduct7">
+                 <div id="product7">
+                 </div>
+                 <p><big> IT Cosmetics </big>
+                    <br>
+                   Confidence in Your Beauty Sleep Night Cream - Visibly Improves Fine Lines, Wrinkles, Dryness, Dullness & Loss of Firmness
+                    <br> <button>Add to cart</button>
+                </p>
+             </div>
+             <div id="boxOfProduct8">
+                 <div id="product8">
+                 </div>
+                 <p><big>Honest Beauty</big>
+                    <br>
+                     Hydrogel Cream with Hyaluronic Acid, Jojoba, + Squalane | Oil Free, Lightweight, Moisturizing
+                    <br> <button>Add to cart</button>
+                </p>
+             </div>
+             <div id="boxOfProduct9">
+                 <div id="product9">
+                </div>
+                <p><big> Elegance </big>
+                    <br>
+                    Treatment Cream with Resveratrol, Anti-Aging Facial Moisturizer, Fight Fine Lines & Wrinkles, Hydrate & Protect Skin
+                    <br> <button>Add to cart</button>
+                </p>
+         </div> 
+        <!-- items-batch-three end -->
+    </main>
 
-   
+    <footer>
+    <div id="footer-Items">
+        <ul>
+           <li><big>contact details</big></li>
+           <li>Mail:alizzab2007@gmail.com</li>
+           <li>contact no: 03332292387</li>
+        </ul>
+        <ul>
+            <li><big>Payment Methods</big></li>
+            <li>Cash on delivery</li>      
+            <li>Bank transfer</li>      
+        </ul>
+        <ul id="customer-service">
+            <li><big>Customer Service</big></li>
+            <li>Your account</li>
+            <li>Wish list</li>
+            <li>Deals</li>
+            <li>Help</li>
+            <li>Customer Helpline</li>
+        </ul>
+    </div>
+    <div class="footer-icons">Follow us on 
+        <i class="fa-brands fa-twitter"></i> 
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i> 
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i></div>
+    </footer>
 </body>
 </html>

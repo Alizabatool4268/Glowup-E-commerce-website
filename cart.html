@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Glowup</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div id="logo">
+            </div> 
+             <!-- search bar -->
+             <div id="searchBar">
+                <input type="search" placeholder="search"id="search">
+                <div id="search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+             <div class="icons">
+                <div id="home"><a href="index.html"><i class="fa-solid fa-house"></i></a></div> 
+                <div id="you"><a href="me.html"><i class="fa-solid fa-user"></i> </a></div> 
+                <div id="contactUs"><a href="contact.html"><i class="fa-solid fa-phone"></i> </a></div> 
+                <div id="cart"><a href="cart.html"><i class="fa-solid fa-cart-flatbed-suitcase"></i> </a></div>
+                <div onclick=showSidebar() id="menu"><a><i class="fa-solid fa-bars"></i></a></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="icons-sidebar">
+                <div onclick="closeSidebar()"><a><i class="fa-regular fa-circle-xmark"></i></a></div>
+                <div id="home-side"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div> 
+                <div id="you-side"><a href="me.html"><i class="fa-solid fa-user"></i>Me </a></div> 
+                <div id="contactUs-side"><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></div> 
+                <div id="cart-side"><a href="cart.html"><i class="fa-solid fa-cart-flatbed-suitcase"></i>Cart </a></div> 
+            </div>
+        </div>
+    </header>
+    <script>
+        function showSidebar(){
+            const sidebar=document.getElementsByClassName('sidebar')[0]
+            sidebar.style.display="flex";
+        }
+        function closeSidebar(){
+            const close = document.getElementsByClassName("sidebar")[0]
+            close.style.display="none"
+        }
+    </script>
+    <main>
+        <hr>
+        <div id="cart-background">
+            <span id="welcome-para-cart">
+                <h1>Cart</h1>
+             </span>
+        </div>
+        <hr>
+        <div class="cart">
+          <div id="cart-icon"><i class="fa-solid fa-cart-flatbed-suitcase"></i></div>
+          <p>Looks like your cart is completely empty <a href="index.html">Shop Now</a></p>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-Items">
+            <ul>
+               <li><big>contact details</big></li>
+               <li>Mail:alizzab2007@gmail.com</li>
+               <li>contact no: 03332292387</li>
+            </ul>
+            <ul>
+                <li><big>Payment Methods</big></li>
+                <li>Cash on delivery</li>      
+                <li>Bank transfer</li>      
+            </ul>
+            <ul id="customer-service">
+                <li><big>Customer Service</big></li>
+                <li>Your account</li>
+                <li>Wish list</li>
+                <li>Deals</li>
+                <li>Help</li>
+                <li>Customer Helpline</li>
+            </ul>
+        </div>
+        <div class="footer-icons">Follow us on 
+            <i class="fa-brands fa-twitter"></i> 
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i> 
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i></div>
+        </footer>
+</body>
+</html>
