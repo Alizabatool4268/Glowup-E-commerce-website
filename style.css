@@ -884,17 +884,9 @@ li {
   }
 }
 @media (min-width: 250px) and (max-width: 400px) {
-  #model {
-    height: 35vh;
-    width: 25vw;
-  }
   .sub-background {
-    height: 80vh;
-    width: 75vw;
-  }
-  #model {
-    height: 35vh;
-    width: 30vw;
+    height: 80svh;
+    width: 75svw;
   }
   #home {
     display: none;
@@ -913,8 +905,8 @@ li {
     font-size: 0.55rem;
   }
   .icons-sidebar {
-    height: 50vh;
-    width: 30vw;
+    height: 50svh;
+    width: 30svw;
     font-size: 0.9rem;
     text-align: center;
     padding-top: 7px;
@@ -927,8 +919,8 @@ li {
     margin-top: 1rem;
   }
   #model {
-    height: 38vh;
-    width: 28vw;
+    height: 38svh;
+    width: 28svw;
   }
   #welcome-para p {
     font-size: 0.78rem;
