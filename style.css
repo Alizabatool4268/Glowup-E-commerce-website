@@ -920,13 +920,13 @@ li {
   }
   #model {
     height: 25svh;
-    width: 28svw;
+    width: 30svw;
   }
   #welcome-para p {
-    font-size: 0.78rem;
+    font-size: 0.8rem;
   }
   #welcome-para .static-para {
-    font-size: 0.52rem;
+    font-size: 0.6rem;
   }
   #background button {
     height: 1.5rem;
